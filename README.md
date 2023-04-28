@@ -47,7 +47,7 @@ make VERSION=0.0.3 update_deploy
 - Run `make blue_green_swap`
 ```
 > make blue_green_swap
-./bg-swap.sh
+./scripts/bg-swap.sh
 service/th3-server-service configured
 Switched to the green environment.
 ```
@@ -56,7 +56,7 @@ Switched to the green environment.
 In the event that you need to rollback the deployment, due to errors running `make blue_green_swap` will revert the environment to the previous deployment.
 ```
 > make blue_green_swap
-./bg-swap.sh
+./scripts/bg-swap.sh
 service/th3-server-service configured
 Switched to the blue environment.
 
