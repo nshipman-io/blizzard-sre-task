@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: th3-server-green
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: th3-server
+      version: green
+  template:
+    metadata:
+      labels:
+        app: th3-server
+        version: green
+    spec:
+      containers:
+        - name: th3-server-container
+          image: th3-server:0.0.5
+          ports:
+            - containerPort: 8080
+          env:
+            - name: APP_VERSION
+              value: "0.0.1"

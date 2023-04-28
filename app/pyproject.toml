@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "th3-server"
+version = "0.1.0"
+description = ""
+authors = ["Norman Shipman <norman@nshipman.io>"]
+readme = "README.md"
+packages = [{include = "th3_server"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+gunicorn = "^20.1.0"
+redis = "^4.5.4"
+bottle = "^0.12.25"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
