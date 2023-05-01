@@ -63,7 +63,7 @@ Switched to the blue environment.
 ```
 ### Verification
 ```
-> k describe deployments
+> kubectl describe deployments
 Name:                   th3-server-blue
 Namespace:              default
 CreationTimestamp:      Fri, 28 Apr 2023 08:24:00 -0400
